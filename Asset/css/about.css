@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  background-color: #fff;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6738da;
+  border-radius: 5px;
+}
+body {
+  font-family: "Satoshi", sans-serif;
+  overflow-x: hidden;
+  background-image: url(Image_Holostars/Background_holostars.png);
+  background-attachment: fixed;
+}
+.container-fluid {
+  margin: 0px 30px;
+}
+.navbar {
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar-nav li a {
+  text-transform: uppercase;
+  margin: 0 20px;
+  color: #191919;
+}
+.navbar-brand img {
+  width: 314px;
+  height: 81px;
+}
+.navbar-toggler {
+  width: 30px;
+  height: 3px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+.navbar-item {
+  padding: 0px 25px;
+}
+.nav-item a {
+  color: #191919;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.nav-item a:hover {
+  padding: 8px 12px;
+  color: #6738da;
+  transform: translateY(-3px);
+}
+.toggle-icon {
+  display: none;
+}
+#home {
+  background: radial-gradient(
+    67.1% 67.1% at 49.97% 56.4%,
+    #75d1ff 0%,
+    #6738da 100%
+  );
+  min-height: 88vh;
+}
+.logo-white img {
+  width: 397px;
+  height: 93px;
+}
+.lead {
+  color: #191919;
+  margin: 3rem 30px;
+  text-align: center;
+}
+.text-title {
+  font-family: "Excon", sans-serif;
+  margin-top: 2.5rem;
+  font-size: 64px;
+  color: #6738da;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.logo-center {
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+.about1 {
+  margin-top: 3.5rem;
+  justify-content: space-around;
+}
+.about2 {
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.desc {
+  margin-top: 1.2rem;
+}
+.title-about {
+  color: #6738da;
+  font-weight: 900;
+  font-family: "Excon", sans-serif;
+}
+.desc-about {
+  text-align: justify;
+  font-size: 18px;
+}
+.btn-more {
+  position: relative;
+  margin: auto;
+  padding: 8px 18px;
+  transition: all 0.2 ease;
+  border: none;
+  background: none;
+}
+.btn-more:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background-color: #bfa3ff;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+.btn-more span {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #191919;
+}
+.btn-more svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #191919;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.btn-more:hover:before {
+  width: 100%;
+  background-color: #bfa3ff;
+}
+
+.btn-more:hover svg {
+  transform: translateX(0);
+}
+.btn-more:active {
+  transform: scale(0.95);
+}
+.footer {
+  background: linear-gradient(88.93deg, #6738da 8.17%, #4ec4ff 123.14%);
+  color: #fff;
+  text-align: left;
+  margin-top: 5rem;
+  font-weight: 600;
+}
+.footer1 {
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+}
+.footer1 .footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-link:hover {
+  color: #191919;
+}
+.footer2 {
+  justify-content: space-between;
+  align-items: center;
+}
+.company {
+  margin-right: 60px;
+}
+.company img {
+  margin-left: 6px;
+}
+.twyt {
+  list-style: none;
+  margin: 10px -35px;
+}
+.twyt i {
+  color: #fff;
+  margin-right: 25px;
+  transition: 0.3s;
+}
+.twyt i:hover {
+  transform: translateY(-10px);
+}
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    margin: 0px 5px;
+  }
+  .toggle-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: red;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  .navbar-nav {
+    margin-top: 20px;
+  }
+  .middle-bar {
+    margin-top: 0px;
+  }
+  .nav-item {
+    padding: 0 0px;
+  }
+  .navbar-toggler.collapsed .toggle-icon {
+    background-color: #191919;
+  }
+  .navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+  }
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  .navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+  }
+  .navbar-toggler .top-bar {
+    margin: 0px;
+    transform: rotate(135deg);
+  }
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  .navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+  }
+  .navbar-brand img {
+    width: 200px;
+    height: 50px;
+  }
+  #home {
+    min-height: 30vh;
+  }
+  .logo-white img {
+    width: 160px;
+    height: 40px;
+    margin-top: -40px;
+  }
+  .lead {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #191919;
+  }
+  .about2 {
+    flex-direction: column-reverse;
+  }
+  .footer1 {
+    margin: auto;
+    flex-direction: column;
+  }
+  .footer2 {
+    flex-direction: column;
+  }
+  .footer-link {
+    font-size: 12px;
+  }
+  .company {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .company img {
+    width: 100px;
+  }
+  .twyt {
+    margin-bottom: -15px;
+  }
+}

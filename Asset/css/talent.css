@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    background-color: #fff;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#6738DA ;
+    border-radius: 5px;
+}
+body{
+    font-family: 'Satoshi', sans-serif;
+    overflow-x: hidden;
+    background-image: url(Image_Holostars/Background_holostars.png);
+    background-attachment: fixed;
+}
+.container-fluid{
+    margin: 0px 30px;
+}
+.navbar{
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar-nav li a{
+    text-transform: uppercase;
+    margin: 0px 20px;
+    color: #191919;
+}
+.navbar-brand img{
+    width: 200px;
+    height: 50px;
+}
+.navbar-toggler{
+    width: 30px;
+    height: 3px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+.navbar-item{
+    padding: 0px 25px;
+}
+.nav-item a{
+    color: #191919;
+    font-weight: 500;
+    transition: .2s;
+}
+.nav-item a:hover{
+    padding: 8px 12px;
+    color: #6738DA;
+    transform: translateY(-3px);
+}
+.toggle-icon{
+    display: none;
+}
+.text-title{
+    margin-top: 3rem;
+    font-family: 'Excon', sans-serif;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: #6738DA;
+}
+.nav-pills .nav-link.active{
+    background-color: #6738DA;
+    color: #fff;
+}
+.nav-link{
+    color: #969696;
+    margin: 0px 20px;
+    margin-top: 20px;
+}
+.nav-link:hover{
+    color: #6738DA;
+}
+.card-holo{
+    width: 215px;
+    height: 271px;
+    margin-top:3rem;
+    margin-right: 5rem;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s ease;
+}
+.card-holo img{
+    height: 100%;
+}
+.card-holo:hover{
+    transform: translateY(-8px);
+}
+.en{
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    writing-mode: vertical-lr;
+    letter-spacing: 1px;
+    margin-right: 230px;
+    margin-bottom: 90px;
+    z-index: 1;
+    top: 1;
+    opacity: 0;
+    transform: translate(100%);
+    transition: all .2s ease;
+}
+.dark-en{
+    position: absolute;
+    color: #191919;
+    font-size: 15px;
+    writing-mode: vertical-lr;
+    letter-spacing: 1px;
+    margin-right: 190px;
+    margin-bottom: 90px;
+    z-index: 1;
+    top: 1;
+    opacity: 0;
+    transition: all .2s ease;
+}
+.jp{
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    writing-mode:vertical-lr;
+    font-weight: 700;
+    margin-left: 179px;
+    margin-top: 85px;
+    font-size: 17px;
+    transition: all .2s ease;
+}
+.dark-jp{
+    position: absolute;
+    color: #191919;
+    font-size: 17px;
+    opacity: 0;
+    writing-mode: vertical-lr;
+    font-weight: 700;
+    margin-left: 179px;
+    margin-top: 85px;
+    transition: all .2s ease;
+}
+.card-holo:hover .en,
+.card-holo:hover .jp,
+.card-holo:hover .dark-jp,
+.card-holo:hover .dark-en{
+    opacity: 1;
+}
+.col-2{
+    margin-right: 2.3rem;
+    margin-top: -1rem;
+}
+.footer{
+    background:linear-gradient(88.93deg, #6738DA 8.17%, #4EC4FF 123.14%);
+    color: #fff;
+    text-align: left;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+.footer1{
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+}
+.footer1 .footer-link{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+.footer-link:hover{
+    color: #191919;
+}
+.footer2{
+    justify-content: space-between;
+    align-items: center;
+}
+.company{
+    margin-right: 60px;
+}
+.company img{
+    margin-left: 6px;
+}
+.twyt{
+    list-style: none;
+    margin:10px -35px;
+}
+.twyt i{
+    color: #fff;
+    margin-right: 25px;
+    transition: .3s;
+}
+.twyt i:hover{
+    transform: translateY(-10px);
+}
+@media screen and (max-width:768px){
+    .card-holo{
+        width: 170px;
+        height: 271px;
+    }
+    .container-fluid{
+        margin: 0px 5px 0px 5px;
+    }
+    .toggle-icon{
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: red;
+        border-radius: 1px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition:.25s ease-in-out;
+    }
+    .navbar-nav{
+        margin-top: 20px;
+    }
+    .middle-bar{
+        margin-top: 0px;
+    }
+    .nav-item{
+        padding: 0 0px;
+    }
+    .navbar-toggler.collapsed .toggle-icon{
+        background-color: #191919;
+    }
+    .navbar-toggler.collapsed .top-bar{
+        margin-top: -20px;
+        transform: rotate(0deg);
+    }
+    .navbar-toggler.collapsed .middle-bar{
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    .navbar-toggler.collapsed .bottom-bar{
+        margin-top: 20px;
+        transform: rotate(0deg);
+    }
+    .navbar-toggler .top-bar{
+        margin: 0px;
+        transform: rotate(135deg);
+    }
+    .navbar-toggler .middle-bar{
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    .navbar-toggler .bottom-bar{
+        margin-top: 0px;
+        transform: rotate(-135deg);
+    }
+    .text-title{
+        font-size: 40px;
+    }
+    .en{
+        margin-right: 190px;
+    }
+    .jp{
+        margin-left: 140px;
+    }
+    .col-2{
+        margin-right: 7.5rem;
+    }
+    .footer2{
+        flex-direction: column;
+    }
+    .company{
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .company img{
+        width: 100px;
+    }
+    .footer1{
+        flex-direction: column;
+        margin: auto;
+    }
+    .footer-link{
+        font-size: 12px;
+    }
+    .twyt{
+        margin-bottom: -15px;
+    }
+}
